@@ -1,11 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://btm4ejroipiua"]
+[gd_scene load_steps=5 format=3 uid="uid://btm4ejroipiua"]
 
 [ext_resource type="Theme" uid="uid://c7jk7cmh3moyk" path="res://hotdog.tres" id="1_owxsa"]
 [ext_resource type="Texture2D" uid="uid://u4hr2cfbmwde" path="res://template.png" id="2_1am2s"]
+[ext_resource type="Script" path="res://testing.gd" id="2_hnc8s"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_0np5a"]
 
-[node name="Control" type="Control"]
+[node name="Hotdog" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,6 +14,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_owxsa")
+script = ExtResource("2_hnc8s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Template" type="Sprite2D" parent="CanvasLayer"]
+texture_filter = 1
+position = Vector2(372, 294)
+texture = ExtResource("2_1am2s")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -87,17 +97,10 @@ offset_bottom = 357.0
 selected = 0
 item_count = 3
 popup/item_0/text = "One"
-popup/item_0/id = 0
 popup/item_1/text = "Two"
 popup/item_1/id = 1
 popup/item_2/text = "Three"
 popup/item_2/id = 2
-
-[node name="Template" type="Sprite2D" parent="."]
-visible = false
-texture_filter = 1
-position = Vector2(372, 294)
-texture = ExtResource("2_1am2s")
 
 [node name="SpinBox" type="SpinBox" parent="."]
 layout_mode = 0
@@ -105,3 +108,30 @@ offset_left = 402.0
 offset_top = 326.0
 offset_right = 577.0
 offset_bottom = 351.0
+
+[node name="TabBar" type="TabBar" parent="."]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 396.0
+offset_right = 439.0
+offset_bottom = 422.0
+current_tab = 0
+tab_count = 3
+tab_0/title = "One"
+tab_1/title = "Two"
+tab_2/title = "Three"
+tab_2/disabled = true
+
+[node name="TabContainer" type="TabContainer" parent="TabBar"]
+show_behind_parent = true
+layout_mode = 0
+offset_top = -1.0
+offset_right = 303.0
+offset_bottom = 142.0
+
+[node name="Tree" type="Tree" parent="."]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 395.0
+offset_right = 750.0
+offset_bottom = 538.0
