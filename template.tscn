@@ -1,0 +1,107 @@
+[gd_scene load_steps=4 format=3 uid="uid://btm4ejroipiua"]
+
+[ext_resource type="Theme" uid="uid://c7jk7cmh3moyk" path="res://hotdog.tres" id="1_owxsa"]
+[ext_resource type="Texture2D" uid="uid://u4hr2cfbmwde" path="res://template.png" id="2_1am2s"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_0np5a"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_owxsa")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.988235, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 206.0
+offset_right = 314.0
+offset_bottom = 281.0
+text = "Button"
+
+[node name="CheckBox" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 615.0
+offset_top = 241.0
+offset_right = 788.0
+offset_bottom = 281.0
+button_pressed = true
+text = "Check!"
+
+[node name="CheckBox2" type="CheckBox" parent="."]
+auto_translate_mode = 1
+layout_mode = 0
+offset_left = 615.0
+offset_top = 185.0
+offset_right = 788.0
+offset_bottom = 225.0
+text = "Check!"
+
+[node name="RadioCheckBox1" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 615.0
+offset_top = 292.0
+offset_right = 841.0
+offset_bottom = 332.0
+button_group = SubResource("ButtonGroup_0np5a")
+text = "radio"
+
+[node name="RadioCheckBox2" type="CheckBox" parent="."]
+auto_translate_mode = 1
+layout_mode = 0
+offset_left = 615.0
+offset_top = 340.0
+offset_right = 841.0
+offset_bottom = 380.0
+button_pressed = true
+button_group = SubResource("ButtonGroup_0np5a")
+text = "radio"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 210.0
+offset_right = 575.0
+offset_bottom = 242.0
+text = "LineEdit"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 315.0
+offset_right = 375.0
+offset_bottom = 357.0
+selected = 0
+item_count = 3
+popup/item_0/text = "One"
+popup/item_0/id = 0
+popup/item_1/text = "Two"
+popup/item_1/id = 1
+popup/item_2/text = "Three"
+popup/item_2/id = 2
+
+[node name="Template" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(372, 294)
+texture = ExtResource("2_1am2s")
+
+[node name="SpinBox" type="SpinBox" parent="."]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 326.0
+offset_right = 577.0
+offset_bottom = 351.0
