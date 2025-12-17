@@ -148,3 +148,16 @@ offset_bottom = 538.0
 
 [node name="PopupMenu" type="PopupMenu" parent="." unique_id=1119579155]
 oversampling_override = 1.0
+
+[node name="MenuBar" type="MenuBar" parent="." unique_id=931233898]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 95.0
+offset_right = 400.0
+offset_bottom = 126.0
+
+[node name="MenuButton" type="MenuButton" parent="MenuBar" unique_id=1076348906]
+layout_mode = 0
+offset_right = 12.0
+offset_bottom = 10.0
+text = "Menú Button"
