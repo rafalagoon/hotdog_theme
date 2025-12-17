@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://c7jk7cmh3moyk" path="res://hotdog.tres" id="1_owxsa"]
 [ext_resource type="Texture2D" uid="uid://u4hr2cfbmwde" path="res://template.png" id="2_1am2s"]
-[ext_resource type="Script" uid="uid://dmg5ugddshc1l" path="res://testing.gd" id="2_hnc8s"]
+[ext_resource type="Script" uid="uid://dmg5ugddshc1l" path="res://template.gd" id="2_hnc8s"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_0np5a"]
 
