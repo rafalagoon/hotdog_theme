@@ -20,6 +20,11 @@ run/main_scene="res://template.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="integer"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

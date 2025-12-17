@@ -15,6 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_owxsa")
 script = ExtResource("2_hnc8s")
+metadata/_edit_horizontal_guides_ = [220.0, 307.0]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=104493142]
 
@@ -36,18 +37,18 @@ metadata/_edit_lock_ = true
 
 [node name="Button" type="Button" parent="." unique_id=803642227]
 layout_mode = 0
-offset_left = 170.0
-offset_top = 206.0
-offset_right = 314.0
-offset_bottom = 281.0
+offset_left = 178.0
+offset_top = 183.0
+offset_right = 322.0
+offset_bottom = 258.0
 text = "Button"
 
 [node name="CheckBox" type="CheckBox" parent="." unique_id=258060514]
 layout_mode = 0
 offset_left = 615.0
-offset_top = 241.0
+offset_top = 219.0
 offset_right = 788.0
-offset_bottom = 281.0
+offset_bottom = 259.0
 button_pressed = true
 text = "Check!"
 
@@ -55,17 +56,17 @@ text = "Check!"
 auto_translate_mode = 1
 layout_mode = 0
 offset_left = 615.0
-offset_top = 185.0
+offset_top = 181.0
 offset_right = 788.0
-offset_bottom = 225.0
+offset_bottom = 221.0
 text = "Check!"
 
 [node name="RadioCheckBox" type="CheckBox" parent="." unique_id=413564448]
 layout_mode = 0
 offset_left = 615.0
-offset_top = 292.0
-offset_right = 841.0
-offset_bottom = 332.0
+offset_top = 266.0
+offset_right = 768.0
+offset_bottom = 306.0
 button_group = SubResource("ButtonGroup_0np5a")
 text = "radio"
 
@@ -73,27 +74,27 @@ text = "radio"
 auto_translate_mode = 1
 layout_mode = 0
 offset_left = 615.0
-offset_top = 340.0
-offset_right = 841.0
-offset_bottom = 380.0
+offset_top = 308.0
+offset_right = 763.0
+offset_bottom = 348.0
 button_pressed = true
 button_group = SubResource("ButtonGroup_0np5a")
 text = "radio"
 
 [node name="LineEdit" type="LineEdit" parent="." unique_id=683161230]
 layout_mode = 0
-offset_left = 346.0
-offset_top = 210.0
-offset_right = 575.0
-offset_bottom = 242.0
+offset_left = 348.0
+offset_top = 204.0
+offset_right = 577.0
+offset_bottom = 236.0
 text = "LineEdit"
 
 [node name="OptionButton" type="OptionButton" parent="." unique_id=1549729348]
 layout_mode = 0
-offset_left = 187.0
-offset_top = 315.0
-offset_right = 375.0
-offset_bottom = 357.0
+offset_left = 178.0
+offset_top = 286.0
+offset_right = 366.0
+offset_bottom = 328.0
 selected = 0
 item_count = 3
 popup/item_0/text = "One"
@@ -105,10 +106,10 @@ popup/item_2/id = 2
 
 [node name="SpinBox" type="SpinBox" parent="." unique_id=15339082]
 layout_mode = 0
-offset_left = 402.0
-offset_top = 326.0
-offset_right = 577.0
-offset_bottom = 351.0
+offset_left = 387.0
+offset_top = 295.0
+offset_right = 562.0
+offset_bottom = 320.0
 
 [node name="TabBar" type="TabBar" parent="." unique_id=464336169]
 layout_mode = 0
@@ -139,8 +140,8 @@ offset_bottom = 538.0
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=793216700]
 layout_mode = 0
-offset_left = 824.0
-offset_top = 362.0
-offset_right = 992.0
-offset_bottom = 386.0
+offset_left = 294.0
+offset_top = 345.0
+offset_right = 462.0
+offset_bottom = 371.0
 value = 48.0
