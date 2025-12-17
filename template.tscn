@@ -18,9 +18,9 @@ script = ExtResource("2_hnc8s")
 metadata/_edit_horizontal_guides_ = [220.0, 307.0]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=104493142]
+visible = false
 
 [node name="Template" type="Sprite2D" parent="CanvasLayer" unique_id=193260884]
-visible = false
 texture_filter = 1
 position = Vector2(372, 294)
 texture = ExtResource("2_1am2s")
@@ -111,6 +111,14 @@ offset_top = 295.0
 offset_right = 562.0
 offset_bottom = 320.0
 
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=793216700]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 345.0
+offset_right = 462.0
+offset_bottom = 371.0
+value = 48.0
+
 [node name="TabBar" type="TabBar" parent="." unique_id=464336169]
 layout_mode = 0
 offset_left = 177.0
@@ -138,10 +146,5 @@ offset_top = 395.0
 offset_right = 750.0
 offset_bottom = 538.0
 
-[node name="ProgressBar" type="ProgressBar" parent="." unique_id=793216700]
-layout_mode = 0
-offset_left = 294.0
-offset_top = 345.0
-offset_right = 462.0
-offset_bottom = 371.0
-value = 48.0
+[node name="PopupMenu" type="PopupMenu" parent="." unique_id=1119579155]
+oversampling_override = 1.0
