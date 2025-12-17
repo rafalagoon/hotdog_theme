@@ -35,7 +35,7 @@ Once the whole theme is done, we'll create a color "customizer" so it's easy to 
 
 We'd love to be like Passivestar... but we doubt it will be included, not even as an Easter Egg: a theme takes up more resources than it seems, and considering that Godot is less than 160MB... every megabyte counts.
 
-## Licencia del proyecto
+## License
 
 MIT License
 
